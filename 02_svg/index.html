@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panda + svg-спрайт</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="wrap-panda">
+    <svg width="166" height="149" class="panda" fill="none">
+
+      <g fill="#4A4A4A">
+        <ellipse rx="18.5" ry="25" cx="8" cy="3" transform="scale(-1 1) rotate(-45 21.75 52.51)" />
+        <ellipse rx="18.5" ry="25" cx="-34" cy="-28" transform="rotate(135 30.76 30.76)" />
+      </g>
+
+      <g fill="#010101">
+        <ellipse rx="7.5" ry="10" cx="-49" cy="-70" transform="rotate(135 12.76 12.76)" />
+        <ellipse rx="7.5" ry="10" cx="-18" cy="3" transform="scale(-1 1) rotate(-45 9.022 21.781)" />
+      </g>
+
+      <circle r="65" cx="70" cy="75" fill="#ffffff" />
+
+      <g fill="#4A4A4A">
+        <ellipse rx="12" ry="15" cx="40" cy="72" />
+        <ellipse rx="12" ry="15" cx="100" cy="72" />
+      </g>
+
+      <g fill="#010101">
+        <ellipse rx="9" ry="7" cx="70" cy="87" />
+        <circle r="6" cx="40" cy="70" />
+        <circle r="6" cx="100" cy="70" />
+      </g>
+
+      <g fill="#ffffff">
+        <circle r="3" cx="39" cy="67" />
+        <circle r="3" cx="99" cy="67" />
+      </g>
+
+    </svg>
+  </div>
+  <div class="section">
+    <div class="container">
+      <h2 class="title">Как это работает?</h2>
+      <ul class="lists">
+        <li class="item-top">
+          <svg class="icon">
+            <use xlink:href="sprites.svg#icon1" />
+          </svg>
+          <h3 class="subtitle">Утренний <span class="color">кофе</span></h3>
+          <p class="text">
+            Кофеин воздействует на центральную нервную систему как природный “будильник”. Поэтому мы быстрее
+            просыпаемся.
+          </p>
+        </li>
+        <li class="item-top">
+          <svg class="icon">
+            <use xlink:href="sprites.svg#icon2" />
+          </svg>
+          <h3 class="subtitle">Час <span class="color">медитации</span></h3>
+          <p class="text">
+            После практик оба полушария мозга начинают работать сбалансированно — это привносит порядок в вашу жизнь.
+          </p>
+        </li>
+        <li class="item-top">
+          <svg class="icon">
+            <use xlink:href="sprites.svg#icon3" />
+          </svg>
+          <h3 class="subtitle">Вперёд к <span class="color">свершениям!</span></h3>
+          <p class="text">
+            Ресурсы каждого человека ограничены, поэтому нам необходимо беречь себя и вовремя останавливаться.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="section-dwn">
+    <div class="container">
+      <div class="lists">
+        <div class="dwn-left">
+          <h2 class="title title-dwn">Интеграция со сторонними сервисами</h2>
+          <p class="text">
+            Поможет всегда оставаться в курсе всех событий, быть максимально эффективным на протяжении всего рабочего
+            дня, контролировать свои задачи и не опоздать на запланированные встречи.
+          </p>
+        </div>
+        <div class="dwn-right">
+          <div class="bg">
+            <svg width="550" height="275" fill="none">
+              <use xlink:href="sprites.svg#bg" />
+            </svg>
+          </div>
+          <ul class="lists">
+            <li class="item">
+              <a href="#">
+                <svg class="icon-logo">
+                  <use xlink:href="sprites.svg#fb" />
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <svg class="icon-logo">
+                  <use xlink:href="sprites.svg#trello" />
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <svg class="icon-logo">
+                  <use xlink:href="sprites.svg#worclio" />
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#">
+                <svg class="icon-logo">
+                  <use xlink:href="sprites.svg#drobox" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="lists dwn-lists">
+            <li class="item">
+              <a href="#">
+                <svg class="icon-logo">
+                  <use xlink:href="sprites.svg#google" />
+                </svg>
+              </a>
+            </li>
+            <li class="item"><a href="#">
+                <svg class="icon-logo">
+                  <use xlink:href="sprites.svg#plain" />
+                </svg>
+              </a></li>
+            <li class="item">
+              <a href="#">
+                <svg class="icon-logo">
+                  <use xlink:href="sprites.svg#slack" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
