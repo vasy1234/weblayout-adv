@@ -1,0 +1,2 @@
+# weblayout-adv skillbox
+layout
