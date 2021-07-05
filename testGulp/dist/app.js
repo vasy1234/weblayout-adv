@@ -1,0 +1,2 @@
+"use strict";var obj={},prop=null==obj?void 0:obj.prop;
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uanMiXSwibmFtZXMiOlsib2JqIiwicHJvcCJdLCJtYXBwaW5ncyI6ImFBQUEsSUFBTUEsSUFBTSxHQUNOQyxLQUFPRCxNQUFBQSxTQUFILEVBQUdBLElBQUtDIiwiZmlsZSI6ImFwcC5qcyIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IG9iaiA9IHt9XHJcbmNvbnN0IHByb3AgPSBvYmo/LnByb3AiXX0=

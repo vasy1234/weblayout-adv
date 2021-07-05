@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" class="form">
+        <input name="Имя" type="text" placeholder="Имя*" data-validate-field="name">
+        <input name="tel" type="tel" placeholder="Телефон" data-validate-field="tel" data-validate-rules="phone">
+        <input name="email" type="email" placeholder="E-mail*" data-validate-field="mail">
+        <button>Заказать</button>
+    </form>
+    <script src="inputmask.min.js"></script>
+    <script src="just-validate.min.js"></script>
+    <script>
+        var selector = document.querySelector("input[type='tel']");
+        var im = new Inputmask("+7 (999)-999-99-99");
+
+        im.mask(selector);
+
+        new JustValidate('.form', {
+            rules: {
+                name: {
+                    required: true,
+                    minLenght: 2,
+                    maxLenght: 10
+                },
+                tel: {
+                    required: true,
+                    function: (name, value) => {
+                        const phone = selector.inputmask.unmaskedvalue()
+                        return Number(phone) && phone.length === 10
+                    }
+                },
+                mail: {
+                    required: true,
+                    email: true
+                },
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>
