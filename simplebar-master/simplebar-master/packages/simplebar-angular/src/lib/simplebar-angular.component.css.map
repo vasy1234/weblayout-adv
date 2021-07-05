@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,KAAK;CACf",
+    "sources": [
+        "simplebar-angular.component.scss"
+    ],
+    "names": [],
+    "file": "simplebar-angular.component.css"
+}
